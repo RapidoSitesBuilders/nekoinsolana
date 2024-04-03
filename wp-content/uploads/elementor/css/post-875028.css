@@ -5104,10 +5104,10 @@ body.rtl .elementor-87 .elementor-element.elementor-element-206ee1b{
   --gap:60px 30px;
   --flex-wrap:wrap;
   --background-transition:0.3s;
-  --padding-block-start:0px;
+  --padding-block-start:50px;
   --padding-block-end:84px;
   --padding-inline-start:30px;
-  --padding-inline-end:30px
+  --padding-inline-end:30px;
 }
 .elementor-87 .elementor-element.elementor-element-40c6dbf{
   --display:flex;
@@ -5732,7 +5732,8 @@ body.rtl .elementor-87 .elementor-element.elementor-element-1822c40{
       --padding-block-start:0px;
       --padding-block-end:0px;
       --padding-inline-start:15px;
-      --padding-inline-end:15px
+      --padding-inline-end:15px;
+      margin-bottom: 45px;
   }
   .elementor-87 .elementor-element.elementor-element-e0438fd .gradient-heading{
       font-size:40px;

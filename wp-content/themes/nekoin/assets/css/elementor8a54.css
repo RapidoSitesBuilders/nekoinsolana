@@ -5776,9 +5776,9 @@
     -webkit-transform:translateX(-50%);
     transform:translateX(-50%);
     width:1px;
-    top:0;
+    top:100px;
     background:var(--e-global-color-lighter);
-    height:1500px
+    height:518px
 }
 @media(max-width:768px){
     .elementor-timeline-wrapper .default-line{
@@ -5787,7 +5787,9 @@
         -o-transform:translateX(0);
         -moz-transform:translateX(0);
         -webkit-transform:translateX(0);
-        transform:translateX(0)
+        transform:translateX(0);
+        height:650px
+
     }
 }
 .elementor-timeline-wrapper .draw-line{
