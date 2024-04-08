@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Project Nekoin</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+    <link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+    <link rel="alternate" type="application/rss+xml" title="nekoin &raquo; Feed" href="feed/" />
+    <link rel="alternate" type="application/rss+xml" title="nekoin &raquo; Comments Feed" href="comments/feed/" />
+    <link rel="icon" type="image/x-icon" href="favicon16.png" sizes="16x16">
+    <link rel="icon" type="image/x-icon" href="favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="favicon1000.png" sizes="1000x1000">
+
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        "ext": ".png",
+        "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        "svgExt": ".svg",
+      };
+      /*! This file is auto-generated */
+      ! function(e, a, t) {
+        var n, r, o, i = a.createElement("canvas"),
+          p = i.getContext && i.getContext("2d");
+
+        function s(e, t) {
+          p.clearRect(0, 0, i.width, i.height), p.fillText(e, 0, 0);
+          e = i.toDataURL();
+          return p.clearRect(0, 0, i.width, i.height), p.fillText(t, 0, 0), e === i.toDataURL()
+        }
+
+        function c(e) {
+          var t = a.createElement("script");
+          t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+        }
+        for (o = Array("flag", "emoji"), t.supports = {
+            everything: !0,
+            everythingExceptFlag: !0
+          }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+          if (p && p.fillText) switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+            case "flag":
+              return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !s("\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+            case "emoji":
+              return !s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+          }
+          return !1
+        }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+        t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+          t.DOMReady = !0
+        }, t.supports.everything || (n = function() {
+          t.readyCallback()
+        }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+          "complete" === a.readyState && t.readyCallback()
+        })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)))
+      }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min3781.css?ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='classic-theme-styles-css' href='wp-includes/css/classic-themes.min3781.css?ver=6.2.2' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+        --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+        --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+        --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+        --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+        --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+        --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+        --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flow>.alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-flow>.alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-flow>.aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained>.alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-constrained>.alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-constrained>.aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained>.alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      body .is-layout-flex>* {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    
+    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/stylescfaa.css?ver=5.7.6' type='text/css' media='all' />
+    <link rel="stylesheet" href="wp-content/assets/css/keen-slider.min.css">
+    <link rel='stylesheet' id='nekoin_fn_googlefonts-css' href='https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CHeebo%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CHeebo%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CNunito%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic&amp;subset=latin%2Ccyrillic%2Cgreek%2Cvietnamese&amp;ver=6.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css' href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min3b94.css?ver=5.18.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='wp-content/plugins/elementor/assets/css/frontend-lite.mine56c.css?ver=3.12.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min48f5.css?ver=5.3.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-6-css' href='wp-content/uploads/elementor/css/post-6195f.css?ver=1682601657' type='text/css' media='all' />
+    <link rel='stylesheet' id='frel_fontello-css' href='wp-content/plugins/nekoin-core/shortcode/assets/css/fontello001e.css?ver=2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='magnific.popup-css' href='wp-content/plugins/nekoin-core/shortcode/assets/css/magnific.popup001e.css?ver=2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='justified-css' href='wp-content/plugins/nekoin-core/shortcode/assets/css/justified001e.css?ver=2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='frel_style-css' href='wp-content/plugins/nekoin-core/assets/css/style001e.css?ver=2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css' href='wp-content/uploads/elementor/css/global195f.css?ver=1682601657' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-332-css' href='wp-content/uploads/elementor/css/post-332d6b7.css?ver=1682609033' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-font-url-css' href='https://fonts.googleapis.com/css?family=Heebo%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C800%2C800i%7CNunito%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C800%2C800i%7COpen+Sans%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C800%2C800i%7CLora%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C800%2C800i%7CMontserrat%3A200%2C200%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C700%2C700i%2C800%2C800i&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontello-css' href='wp-content/themes/nekoin/framework/css/fontellof427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-base-css' href='wp-content/themes/nekoin/framework/css/basef427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-skeleton-css' href='wp-content/themes/nekoin/framework/css/skeletonf427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-wp-core-css' href='wp-content/themes/nekoin/framework/css/import/wp-coref427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-theme-base-css' href='wp-content/themes/nekoin/framework/css/import/theme-basef427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-widgets-css' href='wp-content/themes/nekoin/framework/css/import/widgetsf427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='nekoin-fn-stylesheet-css' href='wp-content/themes/nekoin/stylef427.css?ver=v2.0.0' type='text/css' media='all' />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito:400%7CHeebo:400%7CLora:400&amp;display=swap&amp;ver=1682604799" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400%7CHeebo:400%7CLora:400&amp;display=swap&amp;ver=1682604799" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400%7CHeebo:400%7CLora:400&amp;display=swap&amp;ver=1682604799" />
+    </noscript>
+    <link rel='stylesheet' id='nekoin_fn_inline-css' href='wp-content/themes/nekoin/framework/css/inline7cd4.css?ver=wp-content/themes/nekoin' type='text/css' media='all' />
+    <style>
+      .keen-slider__slide {
+         min-width: 272px;
+         height: auto;
+       }
+    </style>
+    <style id='nekoin_fn_inline-inline-css' type='text/css'>
+      .nekoin_fn_full_page_in {
+        padding-top: 0px;
+      }
+
+      .nekoin_fn_full_page_in {
+        padding-bottom: 0px;
+      }
+
+      @media(max-width: 1040px) {
+        .nekoin_fn_full_page_in {
+          padding-top: 0px;
+        }
+
+        .nekoin_fn_full_page_in {
+          padding-bottom: 0px;
+        }
+      }
+
+      .cursor-inner.cursor-slider.cursor-hover span:after,
+      .cursor-inner.cursor-slider.cursor-hover span:before {
+        background-color: #FFFFFF;
+      }
+
+      .cursor-outer .fn-cursor,
+      .cursor-inner.cursor-slider:not(.cursor-hover) .fn-cursor {
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .cursor-inner .fn-cursor,
+      .cursor-inner .fn-left:before,
+      .cursor-inner .fn-left:after,
+      .cursor-inner .fn-right:before,
+      .cursor-inner .fn-right:after {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .cursor-inner.cursor-hover .fn-cursor {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      :root {
+        --mc1: #ffc107;
+        --mc2: #ff9800;
+        --hc: #FFFFFF;
+        --bc: #9BA0B8;
+      }
+
+      .nekoin_fn_mobnav,
+      body,
+      .header.active {
+        background: -moz-linear-gradient(90deg, #000 0%, #000 100%);
+        background: -webkit-linear-gradient(90deg, #000 0%, #000 100%);
+        background: linear-gradient(90deg, #000 0%, #000 100%);
+        background-color: #000;
+      }
+
+      @media(max-width: 600px) {
+        #wpadminbar {
+          position: fixed;
+        }
+      }
+
+      .desktop_logo,
+      .retina_logo {
+        max-width: 190px;
+      }
+
+      .desktop_logo,
+      .retina_logo {
+        max-height: 80px;
+      }
+    </style>
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHeebo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.2.2' type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4' id='jquery-core-js'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0' id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='wp-content/themes/nekoin/framework/js/modernizr.customf427.js?ver=v2.0.0' id='modernizr-custom-js'></script>
+    <link rel="https://api.w.org/" href="wp-json/" />
+    <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/332" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.2.2" />
+    <link rel="canonical" href="index.html" />
+    <link rel='shortlink' href='?p=332' />
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrenify.com%2Fwork%2Fenvato%2Ffrenify%2Fwp%2Fnekoin%2F1%2Fhome-4%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrenify.com%2Fwork%2Fenvato%2Ffrenify%2Fwp%2Fnekoin%2F1%2Fhome-4%2F&amp;format=xml" />
+    <meta name="generator" content="Redux 4.3.17" />
+    <meta name="generator" content="Elementor 3.12.2; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <style id="nekoin_fn_option-dynamic-css" title="dynamic-css" class="redux-options-output">
+      .nekoin_fn_totop .icon,
+      .nekoin_fn_widget_articles .count,
+      .nekoin_fn_ccategories .count,
+      .nekoin_fn_mint_top .view_on a,
+      .nekoin_fn_items .icon,
+      .nekoin_fn_search,
+      .trigger,
+      .nekoin_fn_minis .m_item>*,
+      .nekoin_fn_pagination li>span,
+      .nekoin_fn_pagination li>a {
+        background-color: #000;
+      }
+
+      .nekoin_fn_leftnav,
+      .nekoin_fn_searchbox {
+        background-color: #111;
+      }
+
+      body {
+        font-family: Nunito;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        font-display: swap;
+      }
+
+      .nekoin_fn_nav .nav_menu a {
+        font-family: Heebo;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        font-display: swap;
+      }
+
+      input {
+        font-family: Heebo;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        font-display: swap;
+      }
+
+      input {
+        font-family: Lora;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        font-display: swap;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Heebo;
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body class="page-template-default page page-id-332 sticky-enabled elementor-default elementor-kit-6 elementor-page elementor-page-332">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-dark-grayscale">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0 0.49803921568627" />
+            <feFuncG type="table" tableValues="0 0.49803921568627" />
+            <feFuncB type="table" tableValues="0 0.49803921568627" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-grayscale">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0 1" />
+            <feFuncG type="table" tableValues="0 1" />
+            <feFuncB type="table" tableValues="0 1" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-purple-yellow">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+            <feFuncG type="table" tableValues="0 1" />
+            <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-blue-red">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0 1" />
+            <feFuncG type="table" tableValues="0 0.27843137254902" />
+            <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-midnight">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0 0" />
+            <feFuncG type="table" tableValues="0 0.64705882352941" />
+            <feFuncB type="table" tableValues="0 1" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-magenta-yellow">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0.78039215686275 1" />
+            <feFuncG type="table" tableValues="0 0.94901960784314" />
+            <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-purple-green">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+            <feFuncG type="table" tableValues="0 1" />
+            <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+      <defs>
+        <filter id="wp-duotone-blue-orange">
+          <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+          <feComponentTransfer color-interpolation-filters="sRGB">
+            <feFuncR type="table" tableValues="0.098039215686275 1" />
+            <feFuncG type="table" tableValues="0 0.66274509803922" />
+            <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+            <feFuncA type="table" tableValues="1 1" />
+          </feComponentTransfer>
+          <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
+    <!-- Preloader -->
+    <div class="nekoin_fn_preloader">
+      <div class="loading-container">
+        <div class="loading">
+          <div class="l1">
+            <div></div>
+          </div>
+          <div class="l2">
+            <div></div>
+          </div>
+          <div class="l3">
+            <div></div>
+          </div>
+          <div class="l4">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !Preloader -->
+    <!-- HTML starts here -->
+    <div class="nekoin-fn-wrapper core_ready" data-footer-sticky="disabled" data-nav-speed="medium">
+      <!-- Left bar starts here -->
+      <!-- Left Navigation -->
+      <div class="nekoin_fn_leftnav_closer ready"></div>
+      <div class="nekoin_fn_leftnav ready">
+        <a href="#" class="fn__closer">
+          <span></span>
+        </a>
+        <div class="navbox">
+          <div class="list_holder">
+            <ul class="nekoin_fn_items">
+              <li>
+                <div class="item">
+                  <a href="https://opensea.io/" class="" target="_blank"></a>
+                    <span class="icon">                      
+                    </span>
+                  <span class="text">Mint</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <a href="https://discord.com/" class="" target="_blank"></a>
+                  <span class="icon">
+                  </span>
+                  <span class="text">Stake</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav_holder">
+            <!-- For JS -->
+            <span class="icon">
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="223.000000pt" height="200.000000pt" viewBox="0 0 223.000000 200.000000" preserveAspectRatio="xMidYMid meet" class="fn__svg replaced-svg"><path d="M16.417 9.583A7.917 7.917 0 1 1 8.5 1.666a7.917 7.917 0 0 1 7.917 7.917zm-2.5-.382a.913.913 0 0 0-.91-.91h-.355a3.655 3.655 0 0 0-.833-1.393 3.412 3.412 0 0 1 .369-1.953.199.199 0 0 0-.152-.29.197.197 0 0 0-.124.026L9.914 5.844a3.648 3.648 0 0 0-.738-.075H7.642a3.657 3.657 0 0 0-3.587 2.947.71.71 0 0 0 0 1.419 3.656 3.656 0 0 0 1.001 1.876q.093.092.191.177v1.553a.365.365 0 0 0 .364.364h1.163a.365.365 0 0 0 .365-.364v-.694a3.64 3.64 0 0 0 .503.035h1.534a3.642 3.642 0 0 0 .503-.035v.694a.365.365 0 0 0 .365.364h1.163a.365.365 0 0 0 .364-.364v-1.553q.098-.085.19-.177a3.659 3.659 0 0 0 .891-1.451h.354a.913.913 0 0 0 .91-.91zM9.487 6.32a.364.364 0 1 1 0 .728H7.464a.364.364 0 1 1 0-.728h2.025zm-.003 3.702a.95.95 0 0 1 .235.625.929.929 0 0 1-.466.802 1.478 1.478 0 0 1-.448.19v.193a.364.364 0 0 1-.729 0v-.188a1.662 1.662 0 0 1-.285-.091 1.054 1.054 0 0 1-.406-.297.364.364 0 0 1 .55-.477.338.338 0 0 0 .126.098.928.928 0 0 0 .176.056 1.412 1.412 0 0 0 .19.024.845.845 0 0 0 .43-.119c.134-.086.134-.157.134-.191a.224.224 0 0 0-.056-.146.537.537 0 0 0-.14-.113.727.727 0 0 0-.176-.063.838.838 0 0 0-.174-.017 1.824 1.824 0 0 1-.304-.024 1.396 1.396 0 0 1-.392-.127 1.141 1.141 0 0 1-.374-.3.97.97 0 0 1-.222-.608.98.98 0 0 1 .487-.829 1.458 1.458 0 0 1 .436-.18v-.184a.364.364 0 1 1 .729 0v.193a1.714 1.714 0 0 1 .292.103 1.212 1.212 0 0 1 .354.244.364.364 0 0 1-.514.516.483.483 0 0 0-.14-.096.965.965 0 0 0-.18-.063l-.02-.004a.936.936 0 0 0-.147-.026.83.83 0 0 0-.421.113.261.261 0 0 0-.148.213.251.251 0 0 0 .06.148.417.417 0 0 0 .134.108.67.67 0 0 0 .186.06 1.099 1.099 0 0 0 .184.014 1.557 1.557 0 0 1 .328.035 1.456 1.456 0 0 1 .361.13 1.257 1.257 0 0 1 .35.278z"/></svg>                      
+                    </span>
+          </div>
+
+
+          <div class="info_holder">
+            <div class="copyright">
+              <p> Copyright 2023 - All right reserved<a href="" target="_blank"> Project Nekoin</a>
+              </p>
+            </div>
+            <div class="nekoin_fn_social_list">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fn-icon-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fn-icon-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fn-icon-pinterest"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fn-icon-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fn-icon-behance"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- !Left Navigation -->
+      <!-- Left bar ends here -->
+      <!-- Right bar starts here -->
+      <!-- Right bar ends here -->
+      <!-- Header starts here -->
+      <!-- Header -->
+      <header id="header">
+        <div class="header">
+          <div class="header_in">
+            <div class="trigger_logo">
+              <div class="trigger">
+                <span></span>
+              </div>
+              <div class="logo">
+                <div class="fn_logo">
+                  <a href="">
+                    <img class="retina_logo" src="images/logo-600.png" alt="logo" />
+                    <img class="desktop_logo" src="images/logo-600.png" alt="logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="nav">
+              <div class="menu-main-menu-container">
+                <ul id="menu-main-menu" class="nekoin_fn_main_nav">
+                  <li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278">
+                    <a href="index.html#home">
+                      <span class="creative_link">Home</span>
+                    </a>
+                  </li>
+                  <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279">
+                    <a href="index.html#tokenomics">
+                      <span class="creative_link">Tokenomics</span>
+                    </a>
+                  </li>
+                  <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280">
+                    <a href="index.html#about">
+                      <span class="creative_link">About</span>
+                    </a>
+                  </li>
+                  <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281">
+                    <a href="index.html#nekoins">
+                      <span class="creative_link">Nekoins</span>
+                    </a>
+                  </li>
+                  <li id="menu-item-282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-282">
+                    <a href="index.html#roadmap">
+                      <span class="creative_link">Roadmap</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- !Header -->
+      <!-- More Categories -->
+      <div class="nekoin_fn_hidden more_cats">
+        <div class="nekoin_fn_more_categories">
+          <a href="#" data-more="Show More" data-less="Show Less">
+            <span class="text">Show More</span>
+            <span class="fn_count"></span>
+          </a>
+        </div>
+      </div>
+      <!-- !More Categories -->
+      <div class="nekoin_fn_product_preloader">
+        <div class="spinner"></div>
+      </div>
+      <!-- Product Modal -->
+      <div class="nekoin_fn_modal product_modal">
+        <div class="modal_in">
+          <div class="modal_closer">
+            <a href="#">
+              <img class="fn__svg " src="wp-content/themes/nekoin/framework/svg/cancel.svg" alt="svg" />
+            </a>
+          </div>
+          <div class="modal_content">
+            <div class="nekoin_fn_product_modal">
+              <div class="img_item">
+                <!-- here comes product's image -->
+              </div>
+              <div class="content_item">
+                <div class="nekoin_fn_title" data-align="left">
+                  <h3 class="fn_title fn__maintitle" data-text="">
+                    <!-- here comes product's title -->
+                  </h3>
+                  <div class="fn_cs_divider" data-align="left">
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <div class="desc">
+                  <p>
+                    <!-- here comes product's description -->
+                  </p>
+                </div>
+                <div class="view_on">
+                  <!-- here comes product's buttons -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal_ux_closer"></div>
+      </div>
+      <!-- !Product Modal -->
+      <!-- Header ends here -->
+      <!-- Header starts here -->
+      <!-- Mobile Navigation -->
+      <div class="nekoin_fn_mobnav">
+        <!-- <div class="mob_top">
+          <div class="social_trigger">
+            <div class="trigger">
+              <span></span>
+            </div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">Fb.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Tw.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Pt.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Li.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Be.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wallet">
+            <a href="#" class="nekoin_fn_button wallet_opener">
+              <span>Wallet</span>
+            </a>
+          </div>
+        </div> -->
+        <div class="mob_mid">
+          <div class="logo">
+            <div class="fn_logo">
+              <a href="">
+                <img class="retina_logo" src="images/logo-600.png" alt="logo" />
+                <img class="desktop_logo" src="images/logo-600.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+          <div class="trigger">
+            <span></span>
+          </div>
+        </div>
+        <div class="mob_bot">
+          <div class="menu-main-menu-container">
+            <ul id="menu-main-menu-1" class="nekoin_fn_main_nav">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278">
+                <a href="index.html#home">
+                  <span class="creative_link">Home</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279">
+                <a href="index.html#tokenomics">
+                  <span class="creative_link">Tokenomics</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280">
+                <a href="index.html#about">
+                  <span class="creative_link">About</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281">
+                <a href="index.html#nekoins">
+                  <span class="creative_link">Nekoins</span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-282">
+                <a href="index.html#roadmap">
+                  <span class="creative_link">Roadmap</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- !Mobile Navigation -->
+      <!-- Header ends here -->
+      <div class="nekoin_fn_content">
+        <div class="nekoin_fn_pages">
+          <div class="nekoin_fn_page_ajax">
+            <div class="nekoin_fn_full_page_template">
+              <!-- ALL PAGES -->
+              <div class="nekoin_fn_full_page_in">
+                <!-- PAGE -->
+                <div class="full_content">
+                  <div data-elementor-type="wp-page" data-elementor-id="332" class="elementor elementor-332">
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-9d8cc69 elementor-section-full_width ripple elementor-section-height-default elementor-section-height-default" data-id="9d8cc69" data-element_type="section" id="home" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                      <div class="elementor-background-overlay"></div>
+                      <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-79d1ee3" data-id="79d1ee3" data-element_type="column">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-96a3efa elementor-widget elementor-widget-frel-title" data-id="96a3efa" data-element_type="widget" data-widget_type="frel-title.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <h3 class="fn__maintitle big" data-text="Project Nekoin" data-align="left">Project Nekoin</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-a473207 elementor-widget elementor-widget-text-editor" data-id="a473207" data-element_type="widget" data-widget_type="text-editor.default">
+                              <div class="elementor-widget-container">
+                                <style>
+                                  /*! elementor - v3.12.2 - 23-04-2023 */
+                                  .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                    background-color: #69727d;
+                                    color: #fff
+                                  }
+
+                                  .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                    color: #69727d;
+                                    border: 3px solid;
+                                    background-color: transparent
+                                  }
+
+                                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                    margin-top: 8px
+                                  }
+
+                                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                    width: 1em;
+                                    height: 1em
+                                  }
+
+                                  .elementor-widget-text-editor .elementor-drop-cap {
+                                    float: left;
+                                    text-align: center;
+                                    line-height: 1;
+                                    font-size: 50px
+                                  }
+
+                                  .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                    display: inline-block
+                                  }
+                                </style>
+                                <p>Meet NEKOIN, the token with a heart and a mission! 🐾 Not just another crypto, but a movement to make a difference. With our DeFi utilities, you can stake, farm, and grow your investment while helping animals in need. </p>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-2618aa9 elementor-widget elementor-widget-frel-buttons" data-id="2618aa9" data-element_type="widget" data-widget_type="frel-buttons.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_buttons" data-align="left">
+                                    <a class="nekoin_fn_button" href="https://pancakeswap.finance/swap?outputCurrency=0x520931e1dc1C638ff60870D132689b1A812FBE3e" target="_blank" rel="nofollow">
+																									<span>Buy on Pancakeswap</span>
+																								</a>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-615d2b3" data-id="615d2b3" data-element_type="column">
+                                      <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-e97f503 elementor-widget elementor-widget-frel-hero-header" data-id="e97f503" data-element_type="widget" data-widget_type="frel-hero-header.default">
+                                          <div class="elementor-widget-container">
+                                            <div class="cons_w_wrapper">
+                                              <div class="fn_cs_simplecarousel" data-show-title="yes">
+                                                <div class="swiper-container">
+                                                  <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #001">NEKOIN #001</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/13.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #002">NEKOIN #002</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/12.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #003">NEKOIN #003</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/10.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #004">NEKOIN #004</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/9.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                          <a class="popup-youtube nekoin_fn_videobutton" href="https://www.youtube.com/watch?v=7e90gBu4pas">
+                                                            <img decoding="async" class="fn__svg " src="wp-content/themes/nekoin/framework/svg/play-video.svg" alt="svg" />
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #005">NEKOIN #005</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/8.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #006">NEKOIN #006</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/5.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                      <div class="item">
+                                                        <h3 class="fn__maintitle" data-text="NEKOIN #007">NEKOIN #007</h3>
+                                                        <div class="img_holder">
+                                                          <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/3.png"></div>
+                                                          <img decoding="async" src="wp-content/themes/nekoin/framework/img/thumb/square.jpg" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                    </section>
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-2cd1f8a1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2cd1f8a1" data-element_type="section" id="tokenomics">
+                      <div class="elementor-background-overlay"></div>
+                      <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7509b8a2" data-id="7509b8a2" data-element_type="column">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-38cf40a0 elementor-widget elementor-widget-frel-counter-list" data-id="38cf40a0" data-element_type="widget" data-widget_type="frel-counter-list.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_counter_list">
+                                    <ul>
+                                      <li>
+                                        <div class="item">
+                                          <h3 class="fn__gradient_title">
+                                            <span class="prefix"></span>
+                                            <span class="fn_cs_counter" data-separator="" data-from="0" data-to="1" data-speed="2000" data-decimals="0">0</span>
+                                            <span class="suffix">Billion</span>
+                                          </h3>
+                                          <p>Total Supply</p>
+                                          <div class="divider"></div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item">
+                                          <h3 class="fn__gradient_title">
+                                            <span class="prefix"></span>
+                                            <span class="fn_cs_counter" data-separator="" data-from="0" data-to="4" data-speed="2000" data-decimals="0">0</span>
+                                            <span class="suffix">/4 %</span>
+                                          </h3>
+                                          <p>Buy/Sell Tax</p>
+                                          <div class="divider"></div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item">
+                                          <h3 class="fn__gradient_title">
+                                            <span class="prefix"></span>
+                                            <span class="fn_cs_counter" data-separator="" data-from="0" data-to="100" data-speed="2000" data-decimals="0">0</span>
+                                            <span class="suffix">%</span>
+                                          </h3>
+                                          <p>Public Sale</p>
+                                          <div class="divider"></div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item">
+                                          <h3 class="fn__gradient_title">
+                                            <span class="prefix"></span>
+                                            <span class="fn_cs_counter" data-separator="" data-from="0" data-to="0" data-speed="2000" data-decimals="0">0</span>
+                                            <span class="suffix">x000</span>
+                                          </h3>
+                                          <p>Decentralized</p>
+                                          <div class="divider"></div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  <div class="fn_cs_counter_list">
+                                    <a href="https://poocoin.app/tokens/0x520931e1dc1c638ff60870d132689b1a812fbe3e"> <p class="ca" style="text-align: center; font-size: 22px;">
+                                      CA: <span style="color: var(--mc2);"> 0x520931e1dc1c638ff60870d132689b1a812fbe3e</span></p></a> 
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-3b6dc4a3 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3b6dc4a3" data-element_type="section" id="about">
+                      <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-50c6de87" data-id="50c6de87" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-background-overlay"></div>
+                            <div class="elementor-element elementor-element-4156dd18 elementor-widget__width-initial e-transform elementor-widget elementor-widget-frel-image" data-id="4156dd18" data-element_type="widget" data-settings="{&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:130,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="frel-image.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_image">
+                                    <img decoding="async" src="wp-content/uploads/2022/09/1.jpg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1f7b62dd" data-id="1f7b62dd" data-element_type="column">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-3d0d63a3 elementor-widget elementor-widget-frel-title" data-id="3d0d63a3" data-element_type="widget" data-widget_type="frel-title.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <h3 class="fn__maintitle " data-text="The Rise of Nekoins" data-align="left">The Rise of Nekoins</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-74cbeabd elementor-widget elementor-widget-frel-divider" data-id="74cbeabd" data-element_type="widget" data-widget_type="frel-divider.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_divider" data-align="left">
+                                    <div class="divider"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-3db411fd elementor-widget elementor-widget-text-editor" data-id="3db411fd" data-element_type="widget" data-widget_type="text-editor.default">
+                              <div class="elementor-widget-container">
+                                <p>NEKOIN ($NEKOIN) is a community-driven, cat meme-themed cryptocurrency project built on the Binance Smart Chain (BSC). Our primary focus is on community building, animal rescue, charity, and decentralized finance (DeFi) utilities. We believe in the power of collective action and the potential of blockchain technology to foster positive social change</p>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-65b9b5f5 elementor-widget elementor-widget-text-editor" data-id="65b9b5f5" data-element_type="widget" data-widget_type="text-editor.default">
+                              <div class="elementor-widget-container">
+                                <p>The purpose of NEKOIN is to create a fun, engaging, and rewarding platform that brings together the crypto community and animal lovers worldwide. We aim to leverage the power of memes and the appeal of cats to raise awareness about animal rescue and contribute to charitable causes.</p>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-2d337343 elementor-widget elementor-widget-frel-buttons" data-id="2d337343" data-element_type="widget" data-widget_type="frel-buttons.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_buttons" data-align="left">
+                                    <a class="nekoin_fn_button" href="whitepaper.pdf" target="_blank" rel="nofollow"">
+																																<span>Explore Whitepaper</span>
+																															</a>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</section>
+																							<section class=" elementor-section elementor-top-section elementor-element elementor-element-197fb176 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="197fb176" data-element_type="section">
+                                      <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5db09b4a" data-id="5db09b4a" data-element_type="column">
+                                          <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-75fe5920 elementor-widget elementor-widget-frel-title" data-id="75fe5920" data-element_type="widget" data-widget_type="frel-title.default">
+                                              <div class="elementor-widget-container">
+                                                <div class="cons_w_wrapper">
+                                                  <h3 class="fn__maintitle " data-text="Priorities" data-align="left">Priorities</h3>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-6d428047 elementor-widget elementor-widget-frel-divider" data-id="6d428047" data-element_type="widget" data-widget_type="frel-divider.default">
+                                              <div class="elementor-widget-container">
+                                                <div class="cons_w_wrapper">
+                                                  <div class="fn_cs_divider" data-align="left">
+                                                    <div class="divider"></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-60793293 elementor-widget elementor-widget-text-editor" data-id="60793293" data-element_type="widget" data-widget_type="text-editor.default">
+                                              <div class="elementor-widget-container">NEKOIN aims to create a sustainable and rewarding ecosystem for its community while making a positive impact on the world. We invite everyone to join us in our mission to support animal rescue and welfare through the power of blockchain technology and the love of cats.</div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-1dce1d1a elementor-widget elementor-widget-text-editor" data-id="1dce1d1a" data-element_type="widget" data-widget_type="text-editor.default">
+                                              <div class="elementor-widget-container">We prioritize the creation of a supportive and engaged community. We believe that our strength lies in our numbers and the shared passion of our members.</div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-4b52e11 elementor-widget elementor-widget-text-editor" data-id="4b52e11" data-element_type="widget" data-widget_type="text-editor.default">
+                                              <div class="elementor-widget-container"> We are committed to supporting animal rescue organizations and charities. A significant portion of our funds will be allocated to these causes.</div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-229b4887 elementor-widget elementor-widget-frel-buttons" data-id="229b4887" data-element_type="widget" data-widget_type="frel-buttons.default">
+                                              <div class="elementor-widget-container">
+                                                <div class="cons_w_wrapper">
+                                                  <div class="fn_cs_buttons" data-align="left">
+                                                    <a class="nekoin_fn_button" href="#" rel="nofollow">
+																																<span>Check our DApps</span>
+																															</a>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b09159b" data-id="3b09159b" data-element_type="column">
+                                                      <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-77f0b1c5 elementor-widget elementor-widget-frel-steps" data-id="77f0b1c5" data-element_type="widget" data-widget_type="frel-steps.default">
+                                                          <div class="elementor-widget-container">
+                                                            <div class="cons_w_wrapper">
+                                                              <div class="fn_cs_steps">
+                                                                <ul>
+                                                                  <li>
+                                                                    <div class="item">
+                                                                      <div class="item_in">
+                                                                        <h3 class="fn__gradient_title">
+                                                                          
+                                                                          <img src="wp-content/uploads/2022/09/icon1.png" alt="Image Description" style="width:100px;height:100px;">01
+                                                                        </h3>
+                                                                        <p>Community Building</p>
+                                                                      </div>
+                                                                    </div>
+
+                                                                  </li>
+                                                                  <li>
+                                                                    <div class="item">
+                                                                      <div class="item_in">
+                                                                        <h3 class="fn__gradient_title">
+                                                                          <img src="wp-content/uploads/2022/09/icon2.png" alt="Image Description" style="width:100px;height:100px;">02</h3>
+                                                                        <p>Animal Rescue</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </li>
+                                                                  <li>
+                                                                    <div class="item">
+                                                                      <div class="item_in">
+                                                                        <h3 class="fn__gradient_title">
+                                                                          <img src="wp-content/uploads/2022/09/icon3.png" alt="Image Description" style="width:100px;height:100px;">03</h3>
+                                                                        <p>DeFi Utilities</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </li>
+                                                                  <li>
+                                                                    <div class="item">
+                                                                      <div class="item_in">
+                                                                        <h3 class="fn__gradient_title">
+                                                                          <img src="wp-content/uploads/2022/09/icon4.png" alt="Image Description" style="width:100px;height:100px;">04</h3>
+                                                                        <p>Transparency</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </li>
+                                                                </ul>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-ea355dd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ea355dd" data-element_type="section">
+                                                          <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2c2bbf8c" data-id="2c2bbf8c" data-element_type="column">
+                                                              <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-32e83628 elementor-absolute elementor-widget elementor-widget-frel-video" data-id="32e83628" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="frel-video.default">
+                                                                  <div class="elementor-widget-container">
+                                                                    <div class="cons_w_wrapper">
+                                                                      <div class="fn_cs_video" data-align="center">
+                                                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=7e90gBu4pas">
+                                                                          <img decoding="async" class="fn__svg " src="wp-content/plugins/nekoin-core/shortcode/assets/svg/play.svg" alt="svg" />
+                                                                        </a>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-2b36f574 elementor-widget elementor-widget-image" data-id="2b36f574" data-element_type="widget" data-widget_type="image.default">
+                                                                  <div class="elementor-widget-container">
+                                                                    <style>
+                                                                      /*! elementor - v3.12.2 - 23-04-2023 */
+                                                                      .elementor-widget-image {
+                                                                        text-align: center
+                                                                      }
+
+                                                                      .elementor-widget-image a {
+                                                                        display: inline-block
+                                                                      }
+
+                                                                      .elementor-widget-image a img[src$=".svg"] {
+                                                                        width: 48px
+                                                                      }
+
+                                                                      .elementor-widget-image img {
+                                                                        vertical-align: middle;
+                                                                        display: inline-block
+                                                                      }
+                                                                    </style>
+                                                                    <img decoding="async" width="1200" height="632" src="wp-content/uploads/2022/09/nekobg.png" class="attachment-full size-full wp-image-159"/>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </section>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                    </section>
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-33ae64f1 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="33ae64f1" data-element_type="section">
+                      <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-609f04db" data-id="609f04db" data-element_type="column">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-10a2ac94 elementor-widget elementor-widget-frel-divider" data-id="10a2ac94" data-element_type="widget" data-widget_type="frel-divider.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_section_divider">
+                                    <div class="divider">
+                                      <span class="short"></span>
+                                      <span class="long"></span>
+                                      <span class="short"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-2df849c7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2df849c7" data-element_type="section" id="nekoins">
+                      <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-13f8eda9" data-id="13f8eda9" data-element_type="column">
+                          <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-743f4eb7 elementor-widget elementor-widget-frel-title" data-id="743f4eb7" data-element_type="widget" data-widget_type="frel-title.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <h3 class="fn__maintitle big" data-text="Our Nekoins" data-align="center">Our Nekoins</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="elementor-element elementor-element-6cf665e1 elementor-widget elementor-widget-frel-gallery" data-id="6cf665e1" data-element_type="widget" data-widget_type="frel-gallery.default">
+                              <div class="elementor-widget-container">
+                                <div class="cons_w_wrapper">
+                                  <div class="fn_cs_gallery_portal ">
+                                    <div class="collection_top">
+                                      <div class="item" data-src="wp-content/uploads/2022/08/4.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/4.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/4.png">
+                                      </div>
+                                      <div class="item" data-src="wp-content/uploads/2022/08/5.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/5.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/5.png">
+                                      </div>
+                                      <div class="item" data-src="wp-content/uploads/2022/08/6.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/6.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/6.png">
+                                      </div>
+                                      <div class="item" data-src="wp-content/uploads/2022/08/7.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/7.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/7.png">
+                                      </div>
+                                    </div>
+                                    <div class="collection_bottom">
+                                      <div class="item" data-src="wp-content/uploads/2022/08/8.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/8.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/8.png">
+                                      </div>
+                                      <div class="item" data-src="wp-content/uploads/2022/08/12.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/12.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/12.png">
+                                      </div>
+                                      <div class="item" data-src="wp-content/uploads/2022/08/11.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/11.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/11.png">
+                                      </div>
+                                      <div class="item" data-src="wp-content/uploads/2022/08/10.png">
+                                        <div class="item_in">
+                                          <div class="img">
+                                            <div class="abs_img" data-bg-img="wp-content/uploads/2022/08/10.png"></div>
+                                            <img decoding="async" src="wp-content/plugins/nekoin-core/shortcode/assets/img/thumb-square.jpg" alt="" />
+                                          </div>
+                                        </div>
+                                        <input type="hidden" value="wp-content/uploads/2022/08/10.png">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-5d0af7e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d0af7e3" data-element_type="section">
+                              <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-361a664f" data-id="361a664f" data-element_type="column">
+                                  <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-1c655a11 elementor-widget elementor-widget-text-editor" data-id="1c655a11" data-element_type="widget" data-widget_type="text-editor.default">
+                                      <div class="elementor-widget-container">
+                                        <p >The charity receives a substantial donation from the NFT sale, heightened awareness, and a steady funding source from the project's revenue. Investors, in return, gain exclusive access to features, staking rewards, priority for future NFT drops, and unique experiences or goods linked to the NFTs. This strategy creates a win-win scenario, enhancing benefits for both parties as the project succeeds.</p>
+                                      </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-4abb4cbf elementor-widget elementor-widget-frel-buttons" data-id="4abb4cbf" data-element_type="widget" data-widget_type="frel-buttons.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="cons_w_wrapper">
+                                          <div class="fn_cs_buttons" data-align="center">
+                                            <a class="nekoin_fn_button" href="" rel="nofollow">
+																																												<span>Coming Soon!</span>
+																																											</a>
+																																										</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																					</div>
+																																				</div>
+																																			</section>
+																																		</div>
+																																	</div>
+																																</div>
+																															</section>
+
+
+                <section class="partners_section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="blog_section" data-element_type="section" id="blog">     
+                  <div class="elementor-container elementor-column-gap-default">
+                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1eb00c16" data-id="1eb00c16" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                           <div class="elementor-element elementor-element-232d67c5 elementor-widget elementor-widget-frel-title" data-id="232d67c5" data-element_type="widget" data-widget_type="frel-title.default">
+                              <div class="elementor-widget-container">
+                                 <div class="cons_w_wrapper">
+                                    <h3 class="fn__maintitle big" data-text="OUR FUTURE AND CURRENT PARTNERS" data-align="center">OUR FUTURE AND CURRENT PARTNERS</h3>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div id="my-keen-slider" class="keen-slider">
+                              <div class="keen-slider__slide">
+                                <img src="wp-content/assets/img/partners/1.png" alt="" />
+                              </div>  
+                              <div class="keen-slider__slide">
+                                <img src="wp-content/assets/img/partners/2.png" alt="" />
+                              </div>  
+                              <div class="keen-slider__slide">
+                                <img src="wp-content/assets/img/partners/3.png" alt="" />
+                              </div>  
+                              <div class="keen-slider__slide">
+                                <img src="wp-content/assets/img/partners/4.png" alt="" />
+                              </div>  
+                              <div class="keen-slider__slide">
+                                <img src="wp-content/assets/img/partners/5.png" alt="" />
+                              </div>  
+                            </div>        
+                            
+                            
+                            <div id="my-keen-slider2" class="keen-slider">
+                              <div class="keen-slider__slide">
+                                 <img src="wp-content/assets/img/partners/7.png" alt="" />
+                               </div>  
+                               <div class="keen-slider__slide">
+                                 <img src="wp-content/assets/img/partners/8.png" alt="" />
+                               </div>  
+                               <div class="keen-slider__slide">
+                                 <img src="wp-content/assets/img/partners/9.png" alt="" />
+                               </div>  
+                               <div class="keen-slider__slide">
+                                 <img src="wp-content/assets/img/partners/10.png" alt="" />
+                               </div>                
+                               
+                               <div class="keen-slider__slide">
+                                 <img src="wp-content/assets/img/partners/11.png" alt="" />
+                               </div>         
+                               <div class="keen-slider__slide">
+                                 <img src="wp-content/assets/img/partners/12.png" alt="" />
+                               </div> 
+                            </div>
+                     </div>
+                  </div>
+                  </div>
+               </section>
+																															<section class=" elementor-section elementor-top-section elementor-element elementor-element-5243cb86 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="5243cb86" data-element_type="section">
+                                              <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-183f85f5" data-id="183f85f5" data-element_type="column">
+                                                  <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-6989ecbf elementor-widget elementor-widget-frel-divider" data-id="6989ecbf" data-element_type="widget" data-widget_type="frel-divider.default">
+                                                      <div class="elementor-widget-container">
+                                                        <div class="cons_w_wrapper">
+                                                          <div class="fn_cs_section_divider">
+                                                            <div class="divider">
+                                                              <span class="short"></span>
+                                                              <span class="long"></span>
+                                                              <span class="short"></span>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                            </section>
+
+
+
+                            <section class="elementor-section elementor-top-section elementor-element elementor-element-2c69e0a1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2c69e0a1" data-element_type="section" id="roadmap">
+                              <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bf784f5" data-id="7bf784f5" data-element_type="column">
+                                  <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-3a31a391 elementor-widget elementor-widget-frel-title" data-id="3a31a391" data-element_type="widget" data-widget_type="frel-title.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="cons_w_wrapper">
+                                          <h3 class="fn__maintitle big" data-text="Roadmap" data-align="center">Roadmap</h3>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-6b582b97 elementor-widget elementor-widget-frel-roadmaps" data-id="6b582b97" data-element_type="widget" data-widget_type="frel-roadmaps.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="cons_w_wrapper">
+                                          <div class="fn_cs_roadmap">
+                                            <div class="step_holder">
+                                              <div class="step_in" data-bg-img="wp-content/plugins/nekoin-core/shortcode/assets/img/roadmap.png"></div>
+                                            </div>
+                                            <div class="slider_holder">
+                                              <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 01</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">December 2023</p> -->
+                                                        <h3 class="title">NEKOIN Token Launch</h3>
+                                                        <p class="desc">
+                                                        ✓ Official launch of NEKOIN</p>
+                                                        <p class="desc">
+                                                        ✓ Initial liquidity provision.</p>
+                                                        <p class="desc">
+                                                        ✓ Begin community building efforts.</p>
+                                                        <p class="desc">
+                                                        ✓ Initiate marketing campaigns.</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 02</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">January 2024</p> -->
+                                                        <h3 class="title">Development and Partnerships</h3>
+                                                        <p class="desc">
+                                                        ✓ Marketing campaigns.</p>
+                                                        <p class="desc">
+                                                        * Development of Staking and Farming Utilities</p>
+                                                        <p class="desc">
+                                                        * NEKOIN wallet within the app</p>
+                                                        <p class="desc">
+                                                        ✓ Partnerships with animal welfare organizations</p>
+                                                        <p class="desc">
+                                                        ✓ Welfare NFT release.</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 03</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">February 2024</p> -->
+                                                        <h3 class="title">Utility Launch and First Charity Donation</h3>
+                                                        <p class="desc">
+                                                        * Launch of staking and farming utilities.</p>
+                                                        <p class="desc">
+                                                        * First donation to animal rescue charities.</p>
+                                                        <p class="desc">
+                                                        * Release of NEKOIN wallet within the app.</p>
+                                                        <p class="desc">
+                                                        * Begin development of governance system for token holders.</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 04</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">March 2024</p> -->
+                                                        <h3 class="title">Governance and Continued Partnerships</h3>
+                                                        <p class="desc">
+                                                        * Implement governance system for token holders.</p>
+                                                        <p class="desc">
+                                                        * Continue partnerships with animal welfare organizations.</p>
+                                                        <p class="desc">
+                                                        * Begin development of NEKOIN merchandise store.</p>
+                                                        <p class="desc">
+                                                        * Second donation to animal rescue charities.</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 05</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">April 2024 </p> -->
+                                                        <h3 class="title">Merchandise Launch and DeFi Expansion</h3>
+                                                        <p class="desc">
+                                                        * Launch of NEKOIN merchandise store</p>
+                                                        <p class="desc">
+                                                        * Start development of community DAO</p>
+                                                        <p class="desc">
+                                                        * Begin development of lending and borrowing utilities</p>
+                                                        <p class="desc">
+                                                        * Third donation to animal rescue charities</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 06</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">May 2024</p> -->
+                                                        <h3 class="title">Community Voting and Lending Utilities</h3>
+                                                        <p class="desc">
+                                                        * Implement community voting system</p>
+                                                        <p class="desc">
+                                                        * Launch of lending and borrowing utilities</p>
+                                                        <p class="desc">
+                                                        * Begin development of yield optimization strategies</p>
+                                                        <p class="desc">
+                                                        * Fourth donation to animal rescue charities</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="item">
+                                                      <span class="icon"></span>
+                                                      <span class="phase">Phase 07</span>
+                                                      <div class="item_in">
+                                                        <!-- <p class="date">June 2024</p> -->
+                                                        <h3 class="title">Yield Optimization and Year-End Reflection</h3>
+                                                        <p class="desc">
+                                                        * Implement yield optimization strategies</p>
+                                                        <p class="desc">
+                                                        * Expansion of DeFi utilities</p>
+                                                        <p class="desc">
+                                                        * End of year community event and reflection on achievements</p>
+                                                        <p class="desc">
+                                                        * Fifth donation to animal rescue charities</p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                            <section class="elementor-section elementor-top-section elementor-element elementor-element-4ccfb19a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4ccfb19a" data-element_type="section">
+                              <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-481767f4" data-id="481767f4" data-element_type="column">
+                                  <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-3c8b08e2 elementor-widget elementor-widget-frel-divider" data-id="3c8b08e2" data-element_type="widget" data-widget_type="frel-divider.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="cons_w_wrapper">
+                                          <div class="fn_cs_section_divider">
+                                            <div class="divider">
+                                              <span class="short"></span>
+                                              <span class="long"></span>
+                                              <span class="short"></span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                            
+                            <section class="elementor-section elementor-top-section elementor-element elementor-element-7eded37c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7eded37c" data-element_type="section" id="contact">
+                              <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-32bbee72" data-id="32bbee72" data-element_type="column">
+                                  <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-79d5fe38 elementor-widget elementor-widget-frel-title" data-id="79d5fe38" data-element_type="widget" data-widget_type="frel-title.default">
+                                      <div class="elementor-widget-container">
+                                        <div class="cons_w_wrapper">
+                                          <h3 class="fn__maintitle big" data-text="Contact Us" data-align="center">Contact Us</h3>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-60c56aa7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="60c56aa7" data-element_type="section">
+                                      <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5d2f4d6a" data-id="5d2f4d6a" data-element_type="column">
+                                          <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-5c6c45b3 elementor-widget elementor-widget-text-editor" data-id="5c6c45b3" data-element_type="widget" data-widget_type="text-editor.default">
+                                              <div class="elementor-widget-container">We're always excited to hear from our community! Whether you have a question, suggestion, or just want to share your thoughts about Project NEKOIN, we're here to listen.</div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-3d80db75 elementor-widget elementor-widget-text-editor" data-id="3d80db75" data-element_type="widget" data-widget_type="text-editor.default">
+                                              <div class="elementor-widget-container"> For general inquiries, please reach out to us at our official email. We aim to respond to all emails within 48 hours.</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4b5b431c" data-id="4b5b431c" data-element_type="column">
+                                          <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-30953b84 elementor-widget elementor-widget-heading" data-id="30953b84" data-element_type="widget" data-widget_type="heading.default">
+                                              <div class="elementor-widget-container">
+                                                <style>
+                                                  /*! elementor - v3.12.2 - 23-04-2023 */
+                                                  .elementor-heading-title {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    line-height: 1
+                                                  }
+
+                                                  .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                                                    color: inherit;
+                                                    font-size: inherit;
+                                                    line-height: inherit
+                                                  }
+
+                                                  .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                                    font-size: 15px
+                                                  }
+
+                                                  .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                                    font-size: 19px
+                                                  }
+
+                                                  .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                                    font-size: 29px
+                                                  }
+
+                                                  .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                                    font-size: 39px
+                                                  }
+
+                                                  .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                                    font-size: 59px
+                                                  }
+                                                </style>
+                                                <h4 class="elementor-heading-title elementor-size-default">Developer</h4>
+                                              </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-7c2454d6 elementor-widget elementor-widget-heading" data-id="7c2454d6" data-element_type="widget" data-widget_type="heading.default">
+                                              <div class="elementor-widget-container">
+                                                <h3 class="elementor-heading-title elementor-size-default">
+                                                  <a href="tel:+77%20022%20177%2005%2005">TG: yatogamiiii19</a>
+                                                </h3>
+                                              </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-1dd52d43 elementor-widget elementor-widget-heading" data-id="1dd52d43" data-element_type="widget" data-widget_type="heading.default">
+                                              <div class="elementor-widget-container">
+                                                <h4 class="elementor-heading-title elementor-size-default">Email</h4>
+                                              </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-3e6eb442 elementor-widget elementor-widget-heading" data-id="3e6eb442" data-element_type="widget" data-widget_type="heading.default">
+                                              <div class="elementor-widget-container">
+                                                <h3 class="elementor-heading-title elementor-size-default">
+                                                  <a href="mailto:contact@projectneko.com">contact@projectneko.com</a>
+                                                </h3>
+                                              </div>
+                                              <div class="neko_fn_social_list">
+                                                <ul>
+                                                   <li><a href="https://twitter.com/projectnekoin" target="_blank"><i class="fn-icon-twitter"></i></a></li>
+                                                   <li><a href="https://t.me/nekoinofficial" target="_blank"><i class="fn-icon-telegram"></i></a></li>
+                                                   <li><a href="facebook.com" target="_blank"><i class="fn-icon-facebook"></i></a></li>
+                                                   <li><a href="https://twitter.com/projectnekoin" target="_blank"><i class="fn-icon-github"></i></a></li>
+                                                </ul>
+                                             </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1bd134c5" data-id="1bd134c5" data-element_type="column">
+                                          <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-7b567b91 elementor-widget elementor-widget-heading" data-id="7b567b91" data-element_type="widget" data-widget_type="heading.default">
+                                              <div class="elementor-widget-container">
+                                                <h4 class="elementor-heading-title elementor-size-default">Note:</h4>
+                                              </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-632151f9 elementor-widget elementor-widget-heading" data-id="632151f9" data-element_type="widget" data-widget_type="heading.default">
+                                              <div class="elementor-widget-container">
+                                                <h3 class="elementor-heading-title elementor-size-default">We will never ask for your private keys or personal information. Be aware of scammers and only use the official contact methods listed on our website.</h3>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    
+                                </div>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <!-- /PAGE -->
+                      </div>
+                  </div>
+                </div>
+
+
+                <!-- Footer -->
+                <footer id="footer">
+                  <div class="container wide">
+                    <div class="footer">
+                      <div class="left_part">
+                        <p> Copyright 2023 - All rights reserved <a href="index.html" target="_blank"> Project Nekoin</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+                <!-- !Footer -->
+              </div>
+            </div>
+            <!-- All website content ends here -->
+            <div class="frenify-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="yes">
+              <span class="fn-cursor"></span>
+            </div>
+            <div class="frenify-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="yes">
+              <span class="fn-cursor">
+                <span class="fn-left"></span>
+                <span class="fn-right"></span>
+              </span>
+            </div>
+          </div>
+          <!-- HTML ends here -->
+          <!-- Totop -->
+          <a href="#" class="nekoin_fn_totop">
+            <span class="totop_inner">
+              <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve" class="fn__svg  replaced-svg">
+<g>
+  <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441   L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082   c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647   c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>    </span>
+              <span class="text">Scroll To Top</span>
+            </span>
+          </a>
+          <!-- /Totop -->
+          <!-- Searchbox Popup -->
+          <!-- <div class="nekoin_fn_search_closer"></div>
+          <div class="nekoin_fn_searchbox">
+            <div class="container small">
+              <div class="searchbox">
+                <form action="" method="get">
+                  <input type="text" placeholder="Search here..." name="s" autocomplete="off" />
+                  <input type="submit" class="pe-7s-search" value="" />
+                  <a href="#">
+                    <img class="fn__svg " src="wp-content/themes/nekoin/framework/svg/loupe.svg" alt="svg" />
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div> -->
+          <!-- !Searchbox Popup -->
+          <!-- Social List -->
+          <!-- <div id="social">
+            <div class="social">
+              <h4 class="title">Follow Us:</h4>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">Fb.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Tw.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Pt.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Li.</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Be.</a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <!-- !Social List -->
+          <!-- Search Button -->
+          <!-- <a href="#" class="nekoin_fn_search">
+            <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" class="fn__svg  replaced-svg">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M2075 5113 c-437 -38 -840 -195 -1200 -466 -103 -78 -324 -299 -402 -402 -406 -538 -555 -1178 -427 -1825 128 -644 551 -1218 1131 -1532 783 -426 1728 -355 2438 181 l80 61 545 -543 c300 -299 558 -551 573 -561 43 -26 119 -32 171 -12 53 20 109 78 126 131 15 46 7 124 -16 162 -10 15 -262 273 -561 573 l-543 545 61 80 c852 1129 472 2742 -796 3378 -352 177 -798 264 -1180 230z m432 -429 c913 -133 1583 -903 1583 -1819 0 -1014 -821 -1835 -1835 -1835 -695 0 -1322 386 -1639 1010 -227 446 -260 972 -89 1445 138 384 411 723 751 934 159 99 356 184 522 227 207 53 499 69 707 38z"></path>
+</g>
+</svg>  </span>
+          </a> -->
+          <!-- !Search Button -->
+          <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/swv/js/indexcfaa.js?ver=5.7.6' id='swv-js'></script>
+          <script type='text/javascript' id='contact-form-7-js-extra'>
+            /* 
+																							<![CDATA[ */
+            var wpcf7 = {
+              "api": {
+                "root": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/nekoin\/1\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+              }
+            };
+            /* ]]> */
+          </script>
+          <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/indexcfaa.js?ver=5.7.6' id='contact-form-7-js'></script>
+          <script type='text/javascript' src='wp-content/themes/nekoin/framework/js/isotopef427.js?ver=v2.0.0' id='isotope-js'></script>
+          <script type='text/javascript' src='wp-content/themes/nekoin/framework/js/waypointsf427.js?ver=v2.0.0' id='waypoints-js'></script>
+          <script type='text/javascript' src='wp-content/themes/nekoin/framework/js/ripplef427.js?ver=v2.0.0' id='ripple-js'></script>
+          <script type='text/javascript' src='wp-content/themes/nekoin/framework/js/particlef427.js?ver=v2.0.0' id='particle-js'></script>
+          <script type='text/javascript' id='nekoin-fn-init-js-extra'>
+            /* 
+																							<![CDATA[ */
+            var nekoinAjaxObject = {
+              "ajax_url": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/nekoin\/1\/wp-admin\/admin-ajax.php",
+              "siteurl": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/nekoin\/1",
+              "nonce": "71d4085031",
+              "clear_all_text": "Clear All",
+              "read_more_nft": "Read More",
+              "cancel_svg": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/nekoin\/1\/wp-content\/themes\/nekoin\/framework\/svg\/cancel.svg",
+              "list_limit": "4"
+            };
+            /* ]]> */
+          </script>
+          <script type='text/javascript' src='wp-content/themes/nekoin/framework/js/initf427.js?ver=v2.0.0' id='nekoin-fn-init-js'></script>
+          <script type='text/javascript' src='wp-includes/js/comment-reply.min3781.js?ver=6.2.2' id='comment-reply-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/webpack.runtime.mine56c.js?ver=3.12.2' id='elementor-webpack-runtime-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend-modules.mine56c.js?ver=3.12.2' id='elementor-frontend-modules-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+          <script type='text/javascript' src='wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+          <script type='text/javascript' id='elementor-frontend-js-before'>
+            var elementorFrontendConfig = {
+              "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+              },
+              "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close"
+              },
+              "is_rtl": false,
+              "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+              },
+              "responsive": {
+                "breakpoints": {
+                  "mobile": {
+                    "label": "Mobile Portrait",
+                    "value": 767,
+                    "default_value": 767,
+                    "direction": "max",
+                    "is_enabled": true
+                  },
+                  "mobile_extra": {
+                    "label": "Mobile Landscape",
+                    "value": 880,
+                    "default_value": 880,
+                    "direction": "max",
+                    "is_enabled": false
+                  },
+                  "tablet": {
+                    "label": "Tablet Portrait",
+                    "value": 1024,
+                    "default_value": 1024,
+                    "direction": "max",
+                    "is_enabled": true
+                  },
+                  "tablet_extra": {
+                    "label": "Tablet Landscape",
+                    "value": 1200,
+                    "default_value": 1200,
+                    "direction": "max",
+                    "is_enabled": false
+                  },
+                  "laptop": {
+                    "label": "Laptop",
+                    "value": 1366,
+                    "default_value": 1366,
+                    "direction": "max",
+                    "is_enabled": false
+                  },
+                  "widescreen": {
+                    "label": "Widescreen",
+                    "value": 2400,
+                    "default_value": 2400,
+                    "direction": "min",
+                    "is_enabled": false
+                  }
+                }
+              },
+              "version": "3.12.2",
+              "is_static": false,
+              "experimentalFeatures": {
+                "e_dom_optimization": true,
+                "e_optimized_assets_loading": true,
+                "e_optimized_css_loading": true,
+                "a11y_improvements": true,
+                "additional_custom_breakpoints": true,
+                "landing-pages": true
+              },
+              "urls": {
+                "assets": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/nekoin\/1\/wp-content\/plugins\/elementor\/assets\/"
+              },
+              "swiperClass": "swiper-container",
+              "settings": {
+                "page": [],
+                "editorPreferences": []
+              },
+              "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+              },
+              "post": {
+                "id": 332,
+                "title": "Home%20%234%20%E2%80%93%20nekoin",
+                "excerpt": "",
+                "featuredImage": false
+              }
+            };
+          </script>
+          <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.mine56c.js?ver=3.12.2' id='elementor-frontend-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/nekoin-core/shortcode/assets/js/justified001e.js?ver=2.0.0' id='justified-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/nekoin-core/shortcode/assets/js/magnific.popup001e.js?ver=2.0.0' id='magnific.popup-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/nekoin-core/shortcode/assets/js/countto001e.js?ver=2.0.0' id='countto-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/nekoin-core/shortcode/assets/js/swiper001e.js?ver=2.0.0' id='swiper-js'></script>
+          <script type='text/javascript' src='wp-content/plugins/nekoin-core/assets/js/init001e.js?ver=2.0.0' id='frel_init-js'></script>
+          <script type="text/javascript" src="wp-content/assets/js/keen-slider.min.js"></script>
+          <script type='text/javascript' id='frel_hook-js-extra'>
+            var fn_object = {
+              "svg_url": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/nekoin\/1\/wp-content\/plugins\/nekoin-core\/shortcode\/assets\/svg\/"
+            };
+            /* ]]> */
+          </script>
+          <script type='text/javascript' src='wp-content/plugins/nekoin-core/assets/js/hook001e.js?ver=2.0.0' id='frel_hook-js'></script>
+          <script>
+            var animation = { duration: 25000, easing: (t) => t };
+      
+              var slider = new KeenSlider("#my-keen-slider", {
+                loop: true,
+                renderMode: "performance",
+                drag: false,
+                slides: {
+                  perView: "auto",
+                  spacing: 15,
+                },
+                created(s) {
+                  s.moveToIdx(5, true, animation);
+                },
+                updated(s) {
+                  s.moveToIdx(s.track.details.abs + 5, true, animation);
+                },
+                animationEnded(s) {
+                  s.moveToIdx(s.track.details.abs + 5, true, animation);
+                },
+              });
+              var slider = new KeenSlider("#my-keen-slider2", {
+                      loop: true,
+                      renderMode: "performance",
+                      drag: false,
+                      rtl: true,
+                      slides: {
+                        perView: "auto",
+                        spacing: 15,
+                      },
+                      created(s) {
+                        s.moveToIdx(5, true, animation);
+                      },
+                      updated(s) {
+                        s.moveToIdx(s.track.details.abs + 5, true, animation);
+                      },
+                      animationEnded(s) {
+                        s.moveToIdx(s.track.details.abs + 5, true, animation);
+                      },
+                    });
+        
+       </script>
+ 
+  </body>
+</html>
